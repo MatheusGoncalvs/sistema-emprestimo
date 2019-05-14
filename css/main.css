@@ -43,3 +43,18 @@ h2{
 .padding-top{
     padding-top: 25px; 
 }
+
+/*Login<--*/
+.linha-main-login{
+    margin: 5%;
+}
+
+.input-padding{
+    padding: 0px;
+    padding-left: 15%;
+}
+
+input, input::after, input:focus{
+    border: none;
+    border-bottom: solid 1px #BCBCBC;
+}

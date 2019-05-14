@@ -17,9 +17,6 @@
             <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href=""><img src="imgs/brand.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" ><span class="sr-only">(current)</span></a>
@@ -29,25 +26,25 @@
             <!--section-->
             <!--Primeiro bloco do Dashboard-->
             <form action="shared/layout.html" method="">
-                <div class="row linha-main">
+                <div class="row justify-content-center linha-main-login">
                     <div class="col-sm-3 blocos-pagina-principal">
                         <div class="row titulo-bloco">
-                            <h1><strong>Efetuar login</strong></h1>
+                            <h1>Efetuar login</h1>
                         </div>
                         <div class="row centro-bloco padding-top">
                             <h2>Email</h2>
                         </div>
-                        <div class="row centro-bloco">
+                        <div class="row input-padding">
                             <input type="text">
                         </div>
                         <div class="row centro-bloco">
                             <h2>Senha</h2>
                         </div>
-                        <div class="row centro-bloco">
-                            <input type="text">
+                        <div class="row input-padding">
+                            <input type="password">
                         </div>
                         <div class="row centro-bloco">
-                            <input type="submit" value="ENTRAR">
+                            <input type="submit" class="btn btn-success" value="ENTRAR">
                         </div>
                         <div class="row centro-bloco">
                             <a href=""><h1>Esqueci a minha senha</h1></a>
@@ -56,7 +53,6 @@
                 </div>
             </form>
         </div>
-        
 
         <!--Js scripts-->
         <link rel="stylesheet" type="text/javascript" href="js/main.js">
