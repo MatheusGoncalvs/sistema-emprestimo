@@ -19,9 +19,7 @@ h3, a:active, a:focus, a{
     color: #333;
 }
 
-.linha-main{
-    margin: 5%;
-}
+
 
 .borda{
     border: 2px solid red;
@@ -57,6 +55,24 @@ h3, a:active, a:focus, a{
     margin: 5%;
 }
 
+/*Este @media tem a função de manter a largura desejada dos forms para todos os pixels*/
+@media only screen and (max-width: 3000px) {
+    .largura-formulario {
+        padding: 0 20rem 0 20rem;
+    }
+    .largura-formulario-login {
+        padding: 0 25rem 0 25rem;
+    }
+    .linha-main {
+        margin: 5%;
+        padding: 0 10rem 0 10rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .largura-formulario, .largura-formulario-login, .linha-main {
+        padding: 0;
+    }
+}
 .input-padding{
     margin-right: 10px;
     padding-left: 10%;
