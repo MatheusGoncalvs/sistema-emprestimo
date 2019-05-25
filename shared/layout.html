@@ -18,91 +18,94 @@
 </head>
 
 <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="../index.html"><img src="../imgs/brand.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <div class="row align-items-center">
-                        <div class="col-1">
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="../index.html"><img src="../imgs/brand.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav align--itens">
+                        <a class="nav-item nav-link active" href="">
                             <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <div class="col-7">
-                            <a class="nav-item nav-link active" href="">Dashboard <span
-                                    class="sr-only">(current)</span></a>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-1">
+                            Dashboard <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-item nav-link active" href="../novoEmprestimo.html">
                             <i class="far fa-money-bill-alt"></i>
-                        </div>
-                        <div class="col-10">
-                            <a class="nav-item nav-link active" href="../novoEmprestimo.html">Novo empréstimo</a>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-1">
+                            Novo empréstimo
+                        </a>
+                        <a class="nav-item nav-link active" href="../cadastrarNovoCliente.html">
                             <i class="far fa-address-card"></i>
-                        </div>
-                        <div class="col-9">
-                            <a class="nav-item nav-link active" href="../cadastrarNovoCliente.html">Novo cliente</a>
-                        </div>
+                            Novo cliente
+                        </a>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!--section-->
-        <!--Primeiro bloco do Dashboard-->
-        <div class="row linha-main">
-            <div class="col-sm-5 blocos-pagina-principal">
-                <div class="row titulo-bloco">
-                    <h1>Capital Real</h1>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container-fluid">
+            <!--Bloco: Capital Real-->
+            <div class="row linha-main">
+                <div class="col-sm-5 blocos-pagina-principal">
+                    <div class="row titulo-bloco">
+                        <h1>Capital Real</h1>
+                    </div>
+                    <div class="row centro-bloco padding-top">
+                        <h2>Saldo</h2>
+                    </div>
+                    <div class="row centro-bloco">
+                        <h1><strong>R$ 45.000,00</strong></h1>
+                    </div>
+                    <div class="row centro-bloco">
+                        <a href="">
+                            <h1></h1>
+                        </a>
+                    </div>
                 </div>
-                <div class="row centro-bloco padding-top">
-                    <h2>Saldo</h2>
-                </div>
-                <div class="row centro-bloco">
-                    <h1><strong>R$ 45.000,00</strong></h1>
-                </div>
-                <div class="row centro-bloco">
-                    <a href="">
-                        <h1></h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-5 blocos-pagina-principal">
-                <div class="row titulo-bloco">
-                    <h1>Vencimento Próximo</h1>
-                </div>
-                <div class="row centro-bloco padding-top">
-                    <h2>01/05/2019</h2>
-                </div>
-                <div class="row centro-bloco">
-                    <h1><strong>R$ 1000,00</strong></h1>
-                </div>
-                <div class="row centro-bloco">
-                    <h2>Lourival das couves</h2>
-                </div>
-                <div class="row centro-bloco bottom-bloco">
-                    <div class="row ">
-                        <div class="col-1">
-                            <i class="far fa-list-alt"></i>
-                        </div>
-                        <div class="col-10">
-                            <a href="">
-                                <h3>Todos os empréstimos à vencer</h3>
-                            </a>
+                <!--Bloco: Vencimento próximo-->
+                <div class="col-sm-5 blocos-pagina-principal">
+                    <div class="row titulo-bloco">
+                        <h1>Vencimento Próximo</h1>
+                    </div>
+                    <div class="row centro-bloco padding-top">
+                        <h2>01/05/2019</h2>
+                    </div>
+                    <div class="row centro-bloco">
+                        <h1><strong>R$ 1000,00</strong></h1>
+                    </div>
+                    <div class="row centro-bloco">
+                        <h2>Lourival das couves</h2>
+                    </div>
+                    <div class="row centro-bloco bottom-bloco">
+                        <div class="row ">
+                            <div class="col-1">
+                                <i class="far fa-list-alt"></i>
+                            </div>
+                            <div class="col-10">
+                                <a href="">
+                                    <h3>Todos os empréstimos à vencer</h3>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <!--Js scripts-->
-    <link rel="stylesheet" type="text/javascript" href="../js/main.js">
+    </section>
+    <footer class="footer">
+        <p>
+            Make with <span class="love">❤</span>
+        </p>
+        <!--<aria-label> serve para auxiliar techs a ditar o texto do elemento que não tem texto-->
+        <div class="switch-container">
+            <input id="night-mode" class="switch switch-shadow" type="checkbox" aria-label="night-mode">
+            <label for="night-mode"></label>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

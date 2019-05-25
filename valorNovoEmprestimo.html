@@ -18,65 +18,71 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="shared/layout.html"><img src="imgs/brand.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <div class="row align-items-center">
-                        <div class="col-1">
-                            <i class="fas fa-chalkboard-teacher"></i>
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="shared/layout.html"><img src="imgs/brand.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <div class="row align-items-center">
+                            <div class="col-1">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="col-7">
+                                <a class="nav-item nav-link active" href="shared/layout.html">Dashboard <span
+                                        class="sr-only">(current)</span></a>
+                            </div>
                         </div>
-                        <div class="col-7">
-                            <a class="nav-item nav-link active" href="shared/layout.html">Dashboard <span
-                                    class="sr-only">(current)</span></a>
+                        <div class="row align-items-center">
+                            <div class="col-1">
+                                <i class="far fa-money-bill-alt"></i>
+                            </div>
+                            <div class="col-10">
+                                <a class="nav-item nav-link active" href="">Novo empréstimo</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-1">
-                            <i class="far fa-money-bill-alt"></i>
-                        </div>
-                        <div class="col-10">
-                            <a class="nav-item nav-link active" href="">Novo empréstimo</a>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-1">
-                            <i class="far fa-address-card"></i>
-                        </div>
-                        <div class="col-9">
-                            <a class="nav-item nav-link active" href="../cadastrarNovoCliente.html">Novo cliente</a>
+                        <div class="row align-items-center">
+                            <div class="col-1">
+                                <i class="far fa-address-card"></i>
+                            </div>
+                            <div class="col-9">
+                                <a class="nav-item nav-link active" href="../cadastrarNovoCliente.html">Novo cliente</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!--section-->
-        <!--Content-->
-        <form action="prazoNovoEmprestimo.html" method="">
-            <div class="row justify-content-center content">
-                <div class="col-sm-5 block">
-                    <div class="row titulo-bloco">
-                        <h1>Qual o valor <strong>total</strong> a emprestar?</h1>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container-fluid">
+            <form action="prazoNovoEmprestimo.html" method="">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 block">
+                        <div class="row titulo-bloco">
+                            <h1>Qual o valor <strong>total</strong> a emprestar?</h1>
+                        </div>
+                        <div class="form-group content-block">
+                            <label for="valorEmprestimo">Valor</label>
+                            <input type="money" class="form-control" id="valorEmprestimo" size="8"
+                                data-mask="000.000.000.000.000,00" data-mask-reverse="true">
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Continuar">
+                        <a href="novoEmprestimo.html" class="btn btn-secondary">Voltar</a>
                     </div>
-                    <div class="form-group content-block">
-                        <label for="valorEmprestimo">Valor</label>
-                        <input type="money" class="form-control" id="valorEmprestimo" size="8"
-                        data-mask="000.000.000.000.000,00" data-mask-reverse="true">
-                    </div>
-                    <input type="submit" class="btn btn-success" value="Continuar">
-                    <a href="novoEmprestimo.html" class="btn btn-secondary">Voltar</a>
                 </div>
-            </div>
-        </form>
-    </div>
-    </div>
-    <!--Js scripts-->
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>
+            Make with <span class="love">❤</span>
+        </p>
+    </footer>
     <link rel="stylesheet" type="text/javascript" href="js/main.js">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -87,7 +93,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
 </body>
 
 </html>
