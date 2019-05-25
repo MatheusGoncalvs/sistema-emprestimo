@@ -3,7 +3,13 @@ body{
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 14px;
+    line-height: 5%;
+    letter-spacing: 2%;
     color: #333;
+}
+
+header, section, footer {
+    display: block;
 }
 
 h1 {
@@ -16,9 +22,10 @@ h2{
     color: #666666;
 }
 
-h3, a:active, a:focus, a{
+h3, a:active, a:focus, a, a:hover{
     font-size: 14px;
     color: #333;
+    text-decoration: none;
 }
 
 /* Temporários */
@@ -46,16 +53,24 @@ h3, a:active, a:focus, a{
     border: 1px solid #ccc;
     border-radius: 7px;
     padding-bottom: 1rem;
+    margin: 10px;
 }
 
 .titulo-bloco {
     padding: 15px;
-    padding-left: 15%;
+    padding-left: 10%;
     background-color: #f1f2f6;
+}
+
+.middle--block {
+    padding: 5%;
 }
 
 .bottom-bloco{
     border-top: 1px solid #ccc;
+    padding-top: 15px;
+    display: block;
+    padding-left: 10%;
 }
 /*Login<--*/
 .content {
@@ -87,6 +102,10 @@ input, input::after, input:focus{
 
 .content-block {
     margin-top: 1rem;
+}
+
+.align--btn {
+    margin-top: 10px; 
 }
 
 #valorEmprestimo {
@@ -149,7 +168,7 @@ span.night-mode-text {
     background-color: var(--bg-dark-soft);
 }
 
-.night-mode h1 {
+.night-mode h1,h3,h2,a,a:hover {
     color: var(--font-color-dark);
 }
 
@@ -165,6 +184,9 @@ span.night-mode-text {
     color: var(--font-color-dark) !important;
 }
 
+.night-mode .bottom-bloco {
+    border-top: 1px solid var(--bg-dark-soft);
+}
 /* Night mode switch button */
 /* Estilo Flat */
 /* Estilo iOS */
