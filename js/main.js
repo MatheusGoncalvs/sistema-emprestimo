@@ -20,7 +20,7 @@ nightMode.addEventListener('click', () => {
     document.documentElement.classList.toggle('night-mode');
 
     // se tiver a classe night-mode
-    if ( document.documentElement.classList.contains('night-mode') ) {
+    if (document.documentElement.classList.contains('night-mode')) {
         // salva o tema no localStorage
         localStorage.setItem('gmtNightMode', true);
         // pinta o theme color na meta tag

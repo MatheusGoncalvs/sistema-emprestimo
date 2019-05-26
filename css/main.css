@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -8,7 +8,9 @@ body{
     color: #333;
 }
 
-header, section, footer {
+header,
+section,
+footer {
     display: block;
 }
 
@@ -17,23 +19,32 @@ h1 {
     color: #2f3542;
 }
 
-h2{
+h2 {
     font-size: 12px;
     color: #666666;
 }
 
-h3, a:active, a:focus, a, a:hover{
+h3,
+a:active,
+a:focus,
+a,
+a:hover {
     font-size: 1rem;
     color: #333;
     text-decoration: none;
 }
 
+
 /* Temporários */
-.borda{
+
+.borda {
     border: 2px solid red;
     border-radius: 8px;
 }
+
+
 /* --------------------------------- */
+
 
 /* Nav */
 
@@ -41,9 +52,17 @@ h3, a:active, a:focus, a, a:hover{
     align-items: center !important;
 }
 
+@media only screen and (min-width: 768px) {
+    .btn-desconectar-align {
+        display: block;
+        position: relative;
+        left: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .align--itens {
-        align-items:initial !important;
+        align-items: initial !important;
         position: relative;
         left: 10px;
     }
@@ -54,6 +73,13 @@ h3, a:active, a:focus, a, a:hover{
     border-radius: 7px;
     padding-bottom: 1rem;
     margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .block {
+        margin: 0;
+        margin-top: 15px;
+    }
 }
 
 #btn-encerramento {
@@ -70,28 +96,33 @@ h3, a:active, a:focus, a, a:hover{
     padding: 5%;
 }
 
-.bottom-bloco{
+.bottom-bloco {
     border-top: 1px solid #ccc;
     padding-top: 15px;
     display: block;
     padding-left: 10%;
 }
+
+
 /*Login<--*/
+
 .content {
     margin: 5%;
 }
 
-.input-padding{
+.input-padding {
     margin-right: 10px;
     padding-left: 10%;
 }
 
-input, input::after, input:focus{
+input,
+input::after,
+input:focus {
     border: none;
     border-bottom: solid 1px #BCBCBC;
 }
 
-.align-legend-new-client{
+.align-legend-new-client {
     padding-top: 2.5px;
 }
 
@@ -99,7 +130,7 @@ input, input::after, input:focus{
     background-color: #f1f2f6;
 }
 
-.input-padding-resumo{
+.input-padding-resumo {
     margin-right: 10px;
     padding: 15px 0 0 10%;
 }
@@ -109,7 +140,7 @@ input, input::after, input:focus{
 }
 
 .align--btn {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 #valorEmprestimo {
@@ -128,7 +159,9 @@ input, input::after, input:focus{
     margin-top: 10px;
 }
 
+
 /*Footer*/
+
 .love {
     color: red;
 }
@@ -180,7 +213,11 @@ span.night-mode-text {
     background-color: var(--bg-dark-soft);
 }
 
-.night-mode h1,h3,h2,a,a:hover {
+.night-mode h1,
+h3,
+h2,
+a,
+a:hover {
     color: var(--font-color-dark);
 }
 
@@ -207,43 +244,52 @@ span.night-mode-text {
 .night-mode .modal-content {
     background-color: var(--bg-dark);
 }
+
+
 /* Night mode switch button */
+
+
 /* Estilo Flat */
+
+
 /* Estilo iOS */
+
 .switch-container {
     margin: 30px auto;
     width: 62px;
-  }
-  
-  .switch {
+}
+
+.switch {
     visibility: hidden;
     position: absolute;
     margin-left: -9999px;
-  }
-  
-  .switch + label {
+}
+
+.switch+label {
     display: block;
     position: relative;
     cursor: pointer;
     outline: none;
     user-select: none;
-  }
+}
 
-.switch-shadow + label {
+.switch-shadow+label {
     padding: 2px;
     width: 62px;
     height: 30px;
     background-color: #dddddd;
     border-radius: 60px;
     transition: background 0.4s;
-  }
-  .switch-shadow + label:before,
-  .switch-shadow + label:after {
+}
+
+.switch-shadow+label:before,
+.switch-shadow+label:after {
     display: block;
     position: absolute;
     content: "";
-  }
-  .switch-shadow + label:before {
+}
+
+.switch-shadow+label:before {
     top: 2px;
     left: 2px;
     bottom: 2px;
@@ -251,8 +297,9 @@ span.night-mode-text {
     background-color: #fff;
     border-radius: 60px;
     transition: background 0.4s;
-  }
-  .switch-shadow + label:after {
+}
+
+.switch-shadow+label:after {
     top: 4px;
     left: 4px;
     bottom: 4px;
@@ -260,11 +307,13 @@ span.night-mode-text {
     background-color: #dddddd;
     border-radius: 52px;
     transition: margin 0.4s, background 0.4s;
-  }
-  .sswitch-shadow:checked + label {
+}
+
+.sswitch-shadow:checked+label {
     background-color: var(--bg-dark);
-  }
-  .switch-shadow:checked + label:after {
+}
+
+.switch-shadow:checked+label:after {
     margin-left: 30px;
     background-color: #8ce196;
-  }
+}
