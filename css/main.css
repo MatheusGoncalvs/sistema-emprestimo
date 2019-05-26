@@ -23,7 +23,7 @@ h2{
 }
 
 h3, a:active, a:focus, a, a:hover{
-    font-size: 14px;
+    font-size: 1rem;
     color: #333;
     text-decoration: none;
 }
@@ -54,6 +54,10 @@ h3, a:active, a:focus, a, a:hover{
     border-radius: 7px;
     padding-bottom: 1rem;
     margin: 10px;
+}
+
+#btn-encerramento {
+    float: right;
 }
 
 .titulo-bloco {
@@ -110,6 +114,14 @@ input, input::after, input:focus{
 
 #valorEmprestimo {
     width: 40%;
+}
+
+#prazoPagamento {
+    width: 30%;
+}
+
+#dataEntradaEmprestimo {
+    width: 41%;
 }
 
 .esqueci-a-senha {
@@ -186,6 +198,14 @@ span.night-mode-text {
 
 .night-mode .bottom-bloco {
     border-top: 1px solid var(--bg-dark-soft);
+}
+
+.night-mode .modal-header {
+    background-color: var(--bg-dark-soft);
+}
+
+.night-mode .modal-content {
+    background-color: var(--bg-dark);
 }
 /* Night mode switch button */
 /* Estilo Flat */

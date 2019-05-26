@@ -50,17 +50,19 @@
         <div class="container-fluid">
             <form action="prazoNovoEmprestimo.html" method="">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4 block">
+                    <div class="col-sm-5 block">
                         <div class="row titulo-bloco">
                             <h1>Qual o valor <strong>total</strong> a emprestar?</h1>
                         </div>
-                        <div class="form-group content-block">
-                            <label for="valorEmprestimo">Valor</label>
-                            <input type="money" class="form-control" id="valorEmprestimo" size="8"
-                                data-mask="000.000.000.000.000,00" data-mask-reverse="true">
+                        <div class="middle--block">
+                            <div class="form-group content-block">
+                                <label for="valorEmprestimo">Valor</label>
+                                <input type="money" class="form-control" id="valorEmprestimo"
+                                    data-mask="000.000.000.000.000,00" data-mask-reverse="true">
+                            </div>
+                            <input type="submit" class="btn btn-success" value="Continuar">
+                            <a href="novoEmprestimo.html" class="btn btn-secondary">Voltar</a>
                         </div>
-                        <input type="submit" class="btn btn-success" value="Continuar">
-                        <a href="novoEmprestimo.html" class="btn btn-secondary">Voltar</a>
                     </div>
                 </div>
             </form>
@@ -68,13 +70,11 @@
     </section>
     <footer class="footer">
         <p>
-            Make with <span class="love">❤</span>
+            Meke your dreams come true
+            <a href="https://github.com/MatheusGoncalvs" target="_blank">
+                <span class="love">1992</span>
+            </a>
         </p>
-        <!--<aria-label> serve para auxiliar techs a ditar o texto do elemento que não tem texto-->
-        <div class="switch-container">
-            <input id="night-mode" class="switch switch-shadow" type="checkbox" aria-label="night-mode">
-            <label for="night-mode"></label>
-        </div>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
